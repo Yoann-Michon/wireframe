@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./path/to/your/css/file.css" />
+    <link href="./images/Logo/Minilogo.svg" rel="icon" type="image/svg+xml" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link href="./style.css" rel="stylesheet" />
+    <title>Artisan Hues</title>
+  </head>
+
+  <body>
+    <div id="home" class="header position-relative">
+      <nav class="navbar navbar-expand-lg sticky-top">
+        <a class="brand navbar-brand mx-5 text-success" href="#home"
+          >Artisan Hues</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mx-5" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-2">
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#home">HOME</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#product">PRODUCTS</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a
+                class="nav-link"
+                href="#faq"
+                data-bs-toggle="modal"
+                data-bs-target="#faqModal"
+                >FAQ</a
+              >
+            </li>
+            <li class="nav-item mx-3">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#contactModal"
+                >CONTACT</a
+              >
+            </li>
+          </ul>
+          <button id="connexion" class="btn btn-success me-2" type="button">
+            Connexion
+          </button>
+        </div>
+      </nav>
+      <div
+        id="title"
+        class="container d-flex justify-content-start align-items-center vh-100"
+      >
+        <div class="d-flex flex-column align-items-center">
+          <p
+            class="text-center text-success fs-1 font-family-Inter m-0 fw-bold"
+          >
+            Unleash Your Inner Artist
+          </p>
+          <p
+            class="text-center text-black text-opacity-50 fs-3 fw-medium font-family-Inter mb-5"
+          >
+            Explore, Create, and Flourish!
+          </p>
+          <div class="droplet mt-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill="green"
+              class="bi bi-droplet-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 16a6 6 0 0 0 6-6c0-1.655-1.122-2.904-2.432-4.362C10.254 4.176 8.75 2.503 8 0c0 0-6 5.686-6 10a6 6 0 0 0 6 6M6.646 4.646l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448c.82-1.641 1.717-2.753 2.093-3.13"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main>
+      <!--Content-->
+      <div
+        class="content d-flex flex-column vh-100 mt-5 py-5 justify-content-between align-items-center position-relative"
+      >
+        <div
+          class="position-relative w-100 d-flex justify-content-center coucou"
+        >
+          <div
+            class="description d-flex justify-content-end align-items-center px-5 position-relative"
+          >
+            <p class="position-relative w-75">
+              Painting is an age-old form of expression, a timeless dance of
+              colors upon canvas. With every stroke of the brush, a story
+              unfolds, a symphony of hues blending and intertwining to evoke
+              emotions and stir the soul.
+            </p>
+          </div>
+          <img id="pict1" src="./images/peinture1.png" class="img-fluid pict" />
+        </div>
+        <div
+          class="position-relative w-100 d-flex justify-content-center coucou"
+        >
+          <div
+            class="description d-flex justify-content-start align-items-center px-5"
+          >
+            <img
+              id="pict2"
+              src="./images/peinture2.png"
+              class="img-fluid pict"
+            />
+            <p id="text" class="position-relative w-75">
+              From the serene tranquility of landscapes to the vibrant chaos of
+              abstract art, painting transcends boundaries, speaking a universal
+              language that resonates with all who behold it. It is a journey of
+              discovery, a voyage into the depths of imagination where every
+              stroke is a step closer to unveiling the innermost thoughts and
+              dreams.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--Product-->
+      <div
+        id="product"
+        class="product d-flex flex-column align-items-center position-relative"
+      >
+        <div
+          class="section mt-5 d-flex align-items-center justify-content-center"
+        >
+          <h2 class="text-white fw-bold top-0">Products</h2>
+        </div>
+        <div
+          class="product-grid my-5 position-relative d-flex justify-content-center"
+        >
+          <div
+            class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-4 text-center w-100"
+          >
+            <div class="col p-0">
+              <button
+                class="paint p-0 border border-5 border-secondary-subtle"
+                data-bs-toggle="modal"
+                data-bs-target="#paintModal"
+              >
+                <img
+                  src="./images/Paints/_2b302b22-29af-4753-b623-00f04418cea0.jpeg"
+                  class="img-fluid"
+                  alt="Paint 1"
+                />
+              </button>
+            </div>
+            <div class="col p-0">
+              <button
+                class="paint p-0 border border-5 border-secondary-subtle"
+                data-bs-toggle="modal"
+                data-bs-target="#paintModal"
+              >
+                <img
+                  src="./images/Paints/_f2ce6a40-5fbd-4e7e-bc6a-0ae7efcfb0b1.jpeg"
+                  class="img-fluid"
+                  alt="Paint 2"
+                />
+              </button>
+            </div>
+            <div class="col p-0">
+              <button
+                class="paint p-0 border border-5 border-secondary-subtle"
+                data-bs-toggle="modal"
+                data-bs-target="#paintModal"
+              >
+                <img
+                  src="./images/Paints/_d288e73a-748e-45ab-a908-24c93f7757e6.jpeg"
+                  class="img-fluid"
+                  alt="Paint 3"
+                />
+              </button>
+            </div>
+            <div class="col p-0">
+              <button
+                class="paint p-0 border border-5 border-secondary-subtle"
+                data-bs-toggle="modal"
+                data-bs-target="#paintModal"
+              >
+                <img
+                  src="./images/Paints/_cfe38218-c9f8-4bb2-ace6-a46de73648b7.jpeg"
+                  class="img-fluid"
+                  alt="Paint 4"
+                />
+              </button>
+            </div>
+            <div class="col p-0">
+              <button
+                class="paint p-0 border border-5 border-secondary-subtle"
+                data-bs-toggle="modal"
+                data-bs-target="#paintModal"
+              >
+                <img
+                  src="./images/Paints/_cd51dabb-3868-4c79-a12a-ce8a890e027f.jpeg"
+                  class="img-fluid"
+                  alt="Paint 5"
+                />
+              </button>
+            </div>
+            <div class="col p-0">
+              <button
+                class="paint p-0 border border-5 border-secondary-subtle"
+                data-bs-toggle="modal"
+                data-bs-target="#paintModal"
+              >
+                <img
+                  src="./images/Paints/_18d72873-ff33-4c67-9aa7-e6fcdf6b34ab.jpeg"
+                  class="img-fluid"
+                  alt="Paint 6"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Modals-->
+      <div
+        class="modal fade"
+        id="paintModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Paint</h1>
+              <button
+                type="button"
+                class="btn-close btn-success"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="image position-relative">
+                <img
+                  src="./images/Paints/_18d72873-ff33-4c67-9aa7-e6fcdf6b34ab.jpeg"
+                  alt="modal paint"
+                  class="img-fluid"
+                />
+              </div>
+              <div
+                class="description d-flex flex-column position-relative w-100"
+              >
+                <p>
+                  This paint shows a person with their face blurred out, and
+                  there is a splash of yellow paint or liquid on the right side
+                  of the image. The central focus is a person with their face
+                  intentionally blurred to obscure identification. The
+                  individual appears to be indoors, as suggested by the dark
+                  background. A significant feature in the image is a bright
+                  yellow splash or burst of color that seems like paint or some
+                  liquid, located on the right side. The mood of the image is
+                  intense and dramatic, accentuated by the contrast between the
+                  dark tones and the vibrant yellow splash.
+                </p>
+                <a
+                  class="price price text-white bg-success rounded text-center w-25"
+                  data-bs-toggle="tooltip"
+                  title="Out of stock"
+                  >500$</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="contactModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close btn-success"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body d-flex flex-column align-items-center">
+              <div
+                class="section d-flex align-items-center justify-content-center mb-3"
+              >
+                <h2 class="text-white fw-medium top-0">Contact Form</h2>
+              </div>
+              <form>
+                <div class="my-3 d-flex flex-row">
+                  <label for="name" class="form-label"></label>
+                  <input
+                    type="text"
+                    class="form-control border border-success border-3 rounded-3 m-3"
+                    id="name"
+                    placeholder="Name"
+                  />
+                  <label for="mail" class="form-label"></label>
+                  <input
+                    type="email"
+                    class="form-control border border-success border-3 rounded-3 m-3"
+                    id="mail"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <div class="mb-3 d-flex">
+                  <label for="textarea"></label>
+                  <textarea
+                    class="form-control border border-success border-3 rounded-4 m-3"
+                    id="textarea"
+                    rows="5"
+                    placeholder="Message"
+                  ></textarea>
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="check" />
+                  <label class="form-check-label" for="check"
+                    >I agree to the <a href="#">Terms of Service</a> and
+                    <a href="#">Privacy Policy</a>. I have read the
+                    <a href="#">KVKK Clarification Text</a> and I accept the
+                    processing of my personal data in accordance with the
+                    <a href="#">Explicit Consent Text</a>.</label
+                  >
+                </div>
+                <div class="mb-3">
+                  <button type="submit" class="btn btn-success rounded">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="faqModal"
+        tabindex="-1"
+        aria-labelledby="accordionModalLabel"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable"
+        >
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="accordionModalLabel">FAQ</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Accordion Item #1
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Content for Accordion Item #1
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Content for Accordion Item #2
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Content for Accordion Item #3
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="footer d-flex flex-column bg-success">
+      <div class="footer-top d-flex flex-wrap justify-content-evenly my-1">
+        <img
+          class="footer-logo my-1 ratio-16x9"
+          src="./images/Logo/AH.svg"
+          alt="Artisan Hues Logo"
+        />
+        <div class="footer-column d-flex flex-column align-items-center h-75">
+          <p class="text-white fs-6 fw-bold font-family-Roboto m-0 px-3 py-2">
+            Services
+          </p>
+          <p class="text-white fs-6 fw-normal font-family-Roboto m-0 px-3 py-2">
+            Design
+          </p>
+          <p class="text-white fs-6 fw-normal font-family-Roboto m-0 px-3 py-2">
+            Shop
+          </p>
+        </div>
+        <div class="footer-column d-flex flex-column align-items-center h-75">
+          <p class="text-white fs-6 fw-bold font-family-Roboto m-0 px-3 py-2">
+            Resources
+          </p>
+          <p class="text-white fs-6 fw-normal font-family-Roboto m-0 px-3 py-2">
+            Contact Us
+          </p>
+          <p class="text-white fs-6 fw-normal font-family-Roboto m-0 px-3 py-2">
+            FAQs
+          </p>
+        </div>
+        <div class="footer-column d-flex flex-column align-items-center h-75">
+          <p class="text-white fs-6 fw-bold font-family-Roboto m-0 px-3 py-2">
+            Company
+          </p>
+          <p class="text-white fs-6 fw-normal font-family-Roboto m-0 px-3 py-2">
+            About Us
+          </p>
+          <p class="text-white fs-6 fw-normal font-family-Roboto m-0 px-3 py-2">
+            Teams
+          </p>
+        </div>
+        <div class="subscribe d-flex flex-column align-self-center h-75">
+          <p
+            class="text-center text-white fs-6 fw-normal font-family-Roboto col-12 m-0 px-3 py-2"
+          >
+            Subscribe to stay tuned for new design.<br />Let's do it!
+          </p>
+          <div class="input d-flex flex-row justify-content-center">
+            <input
+              class="footer-input rounded-5 border-0 text-center mx-1"
+              placeholder="Enter your mail address"
+            />
+            <button class="bg-white rounded-5 border-0 mx-1" type="submit">
+              <i class="bi bi-send"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom d-flex flex-column align-items-center">
+        <span class="stick bg-white rounded w-50 my-1"></span>
+        <div class="copy d-flex flex-row justify-content-between w-50 my-1">
+          <p class="stick text-white">&copy; Copyright 2024</p>
+          <div class="social d-flex flex-row align-items-center">
+            <a class="text-white me-3"><i class="bi bi-facebook"></i></a>
+            <a class="text-white me-3"><i class="bi bi-twitter-x"></i></a>
+            <a class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+            <a class="text-white me-3"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

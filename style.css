@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap");
+
+.header {
+  background-image: url("./images/kelli-tungay-Sj0nhVIb4eY-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  height: 60px;
+}
+
+.brand {
+  font-family: "Newsreader", serif;
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: green;
+}
+
+.droplet {
+  animation: bounce 3s infinite;
+}
+
+.description{
+    background-color: #4745450d;
+    width: 900px;
+    height: 150px;
+}
+
+#pict1 {
+  background-image: url("./images/peinture1.png");
+  background-size: cover;
+  background-position: center;
+  position:absolute;
+  left: 25%;
+  top:-40px;
+  transform: rotateZ(-10deg);
+}
+
+#pict2 {
+  background-image: url("./images/peinture2.png");
+  background-size: cover;
+  background-position: center;
+  position:absolute;
+  right: 25%;
+  bottom: 0px;
+  transform: rotateZ(10deg);
+}
+
+.pict {
+  height: 400px;
+  width: 230px;
+}
+
+.paint > img {
+  height: 240px;
+  width: 250px;
+}
+.section,
+.product > .section {
+  background-image: url("./images/brush.svg");
+  background-size: cover;
+  background-position: center;
+  width: 300px;
+  height: 65px;
+}
+
+.description > .price {
+  width: 50px;
+  height: 25px;
+}
+.footer-logo {
+  height: 150px;
+  fill: white;
+}
+
+.footer-column {
+  width: 150px;
+}
+
+.footer-input {
+  width: 75%;
+}
+
+.stick {
+  height: 3px;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+}
+
+@media (max-width: 770px){
+
+    .description{
+        width: 100%;
+        height: 300px;
+        margin-bottom: 10px;
+        justify-content: center !important;
+        padding: 0 !important;
+    }
+
+    #pict1 {
+        transform: rotateZ(0);
+        position: relative;
+        left: 50%;
+    }
+      
+    #pict2 {
+        transform: rotateZ(0);
+        position: relative;
+    }
+      
+    .pict {
+        display: none !important;
+    }
+
+    .coucou{
+        display: flex !important;
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    #text{
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 1024px){
+    #pict1 {
+        left: 50px !important;
+    }
+      
+    #pict2 {
+        right: 40px !important;
+    }
+}
