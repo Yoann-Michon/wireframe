@@ -353,11 +353,37 @@
                   >
                 </div>
                 <div class="mb-3">
-                  <button type="submit" class="btn btn-success rounded">
+                  <button type="submit" class="btn btn-success rounded"
+                  data-bs-toggle="modal"
+                  data-bs-target="#submitModal">
                     Submit
                   </button>
                 </div>
               </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="submitModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Merci</h1>
+              <button
+                type="button"
+                class="btn-close btn-success"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>Nous vous contacterons prochainement.</p>
             </div>
           </div>
         </div>
